@@ -1,6 +1,7 @@
 import React from "react";
 import CartItem from "./CartItem";
 import "./Cart.css";
+
 const CartItems = () => {
   return (
     <div className="cart-container">
