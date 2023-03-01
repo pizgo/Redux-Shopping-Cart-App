@@ -13,6 +13,7 @@ const CartItems = () => {
               <li key={item.id}>
                   <CartItem
                       id={item.id}
+                      quantity = {item.quantity}
                       price={item.price}
                       total={item.total}
                       name={item.name}/>
