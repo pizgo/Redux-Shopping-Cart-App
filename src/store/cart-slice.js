@@ -15,7 +15,7 @@ const cartSlice = createSlice({
             //if the existing product is available we can increase quantity
             if (existingItem) {
                 existingItem.quantity++
-                existingItem.price += newItem.price
+                existingItem.totalPrice += newItem.price
             } else {
                 state.itemsList.push({
                     id: newItem.id,
@@ -25,6 +25,7 @@ const cartSlice = createSlice({
                     name: newItem.name
                 })
             }
+            state.totalQuantity++
         },
         removeFromCart() {
 
